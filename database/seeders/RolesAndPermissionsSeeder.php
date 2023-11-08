@@ -65,18 +65,5 @@ class RolesAndPermissionsSeeder extends Seeder
                 'userRoleId' => $role->id
             ]);
         $user->assignRole($role);
-
-        // create a demo super user
-        // $user = User::updateOrCreate(
-        //     [
-        //         'email' => 'it@yaden.lk',
-        //     ],
-        //     [
-        //         'name' => 'Yaden International Super user',
-        //         'email' => 'it@yaden.lk',
-        //         'password' => bcrypt('yaden@123'),
-        //         'userRoleId' => $role->id
-        //     ]);
-        // $user->assignRole($role);
     }
 }

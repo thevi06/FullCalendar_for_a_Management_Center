@@ -35,7 +35,6 @@ class RolesAndPermissionsSeeder extends Seeder
             'calendar-create',
             'calendar-edit',
             'calendar-delete',
-            'calendar-renewal',
         ];
 
         foreach ($permissions as $permission) {

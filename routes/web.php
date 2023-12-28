@@ -1,22 +1,13 @@
 <?php
 
 use App\Http\Controllers\Admin\DashboardController;
-use App\Http\Controllers\Admin\TenderController;
-use App\Http\Controllers\Admin\ListTenderController;
-use App\Http\Controllers\Admin\ReadTenderController;
-use App\Http\Controllers\Admin\AllProductController;
-use App\Http\Controllers\Admin\CreateProductController;
-use App\Http\Controllers\Admin\ViewProductController;
-use App\Http\Controllers\Admin\SupplierController;
+use App\Http\Controllers\Admin\CalendarController;
 use App\Http\Controllers\Admin\CustomerRoleController;
-use App\Http\Controllers\Admin\TenderMappingController;
 use App\Http\Controllers\Admin\UserManagementController;
 use App\Http\Controllers\Admin\UserRolePermissionController;
 use App\Http\Controllers\Auth\LoginController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Admin\ProductManagementController;
-use App\Http\Controllers\Admin\TenderManagementController;
 use App\Http\Controllers\FullCalenderController;
 use App\Http\Controllers\Admin\ProfileController;
 
@@ -49,7 +40,7 @@ Route::group([
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
     Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
-    Route::post('/reset-password', [ProfileController::class, 'resetPassword'])->name('reset-password');
+    Route::post('/reset-password', [ProfileController::class, 'resetPassword'])->name('reset-password');;
 
     //user management
     Route::group([
@@ -80,31 +71,14 @@ Route::group([
     });
 
     // Tender Management
-    Route::group([
-        'prefix' => 'tenders',
-        'as' => 'tender.'
-    ], function () {
-        Route::get('/tender-reading',[TenderManagementController::class, 'index'])->name('tender-reading');
-        Route::get('/tender-evaluation', [TenderManagementController::class, 'edit'])->name('tender-evaluation');
-        Route::get('/previous-tenders', [TenderManagementController::class, 'create'])->name('previous-tenders');
-        Route::get('/tender-mapping', [TenderManagementController::class, 'view'])->name('tender-mapping');
 
-        // Route::get('/tender-reading', [ReadTenderController::class, 'ReadTender'])->name('tender-reading');
-});
 
     //Product
-    Route::group([
-        'prefix' => 'manage-products',
-        'as' => 'product.'
-    ], function () {
-        Route::get('/all-products', [ProductManagementController::class, 'index'])->name('all-products');
-        Route::get('/create-product',[ProductManagementController::class, 'create'])->name('create-product');
-        Route::get('/view-product',[ProductManagementController::class, 'edit'])->name('view-product');
-    });
+
 
     // CutomerRoleController
     Route::get('/customer-role', [CustomerRoleController::class, 'AllCustomerRole'])->name('customer-role');
-    Route::get('/tender-mapping',  [TenderMappingController::class, 'TenderMapping'])->name('tender-mapping');
+
 
     Route::get('full-calender', [FullCalenderController::class, 'index']);
 
@@ -116,7 +90,7 @@ Route::group([
         'prefix' => 'manage-supllier',
         'as' => 'supplier.'
     ], function () {
-        Route::get('/create-brands', [SupplierController::class, 'index'])->name('create-brands');
+        Route::get('/create-brands', [CalendarController::class, 'index'])->name('create-brands');
     });
 
 

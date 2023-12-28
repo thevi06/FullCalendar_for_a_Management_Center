@@ -10,6 +10,6 @@ class CalendarController extends Controller
     // Manufacture 
     public function index()
     {
-        return view('admin.supplier.calendar');
+        return view('admin.calendar.calendar');
     }
 }

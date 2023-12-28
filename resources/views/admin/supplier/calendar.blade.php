@@ -84,7 +84,7 @@
       calendar.fullCalendar('unselect');
       return;
     }
-    
+
                     var title = prompt('Event Title:');
         
                     if(title)

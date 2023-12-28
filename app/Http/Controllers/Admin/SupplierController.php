@@ -10,6 +10,6 @@ class SupplierController extends Controller
     // Manufacture 
     public function index()
     {
-        return view('admin.supplier.all_supplier');
+        return view('admin.supplier.calendar');
     }
 }

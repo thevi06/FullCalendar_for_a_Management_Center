@@ -10,12 +10,12 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h3 class="m-0">Customer Status</h3>
+                    <h1 class="m-0">Dashboard</h1>
                 </div><!-- /.col -->
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active">Customer Status</li>
+                        <li class="breadcrumb-item active">Dashboard</li>
                     </ol>
                 </div><!-- /.col -->
             </div><!-- /.row -->
@@ -29,192 +29,66 @@
 @endsection
 
 @section('content')
-<section class="content">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-6 col-md-3">
-                <!-- Info Boxes Style 2 -->
-                <div class="info-box mb-3 bg-warning">
-                    <span class="info-box-icon"><i class="fas fa-tag"></i></span>
-                    <div class="info-box-content">
-                        <span class="info-box-number">EBL</span>
-                        <span class="info-box-number">Time</span>
-                    </div>
-                    <!-- /.info-box-content -->
+    <div class="row">
+        <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-info">
+                <div class="inner">
+                    <h3>150</h3>
+
+                    <p>New Orders</p>
                 </div>
-                <!-- /.info-box -->
-            </div>
-
-            <div class="col-sm-6 col-md-3">
-                <div class="info-box mb-3 bg-success">
-                    <span class="info-box-icon"><i class="far fa-heart"></i></span>
-                    <div class="info-box-content">
-                        <span class="info-box-number">EBM</span>
-                        <span class="info-box-number">Time</span>
-                    </div>
-                    <!-- /.info-box-content -->
+                <div class="icon">
+                    <i class="ion ion-bag"></i>
                 </div>
-                <!-- /.info-box -->
+                <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-success">
+                <div class="inner">
+                    <h3>53<sup style="font-size: 20px">%</sup></h3>
 
-            <div class="col-sm-6 col-md-3">
-                <div class="info-box mb-3 bg-danger">
-                    <span class="info-box-icon"><i class="fas fa-cloud-download-alt"></i></span>
-                    <div class="info-box-content">
-                        <span class="info-box-number">GOV</span>
-                        <span class="info-box-number">Time</span>
-                    </div>
-                    <!-- /.info-box-content -->
+                    <p>Bounce Rate</p>
                 </div>
-                <!-- /.info-box -->
-            </div>
-
-            <div class="col-sm-6 col-md-3">
-                <div class="info-box mb-3 bg-info">
-                    <span class="info-box-icon"><i class="far fa-comment"></i></span>
-                    <div class="info-box-content">
-                        <span class="info-box-number">SME</span>
-                        <span class="info-box-number">Time</span>
-                    </div>
-                    <!-- /.info-box-content -->
+                <div class="icon">
+                    <i class="ion ion-stats-bars"></i>
                 </div>
-                <!-- /.info-box -->
+                <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
-        </div><!-- /.row -->
-    </div><!--/. container-fluid -->
-</section>
-
-
-
-  <div class="content-header">
-    <div class="container-fluid">
-        <div class="row mb-2">
-            <div class="col-sm-6">
-                <h3 class="m-0">Responsibility Status</h3>
-            </div><!-- /.col -->
-        </div><!-- /.row -->
-    </div><!-- /.container-fluid -->
-  </div>
-  <!-- /.content-header -->
-
-  <div class="row">
-    <div class="col-12 col-sm-6 col-md-3">
-      <div class="info-box">
-        <span class="info-box-icon bg-info elevation-1"><i class="fas fa-cog"></i></span>
-
-        <div class="info-box-content">
-          <span class="info-box-number">NW SERVICES</span>
-          <span class="info-box-number">Time</span>
         </div>
-        <!-- /.info-box-content -->
-      </div>
-      <!-- /.info-box -->
-    </div>
-    <!-- /.col -->
-    <div class="col-12 col-sm-6 col-md-3">
-      <div class="info-box mb-3">
-        <span class="info-box-icon bg-danger elevation-1"><i class="fas fa-thumbs-up"></i></span>
+        <!-- ./col -->
+        <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-warning">
+                <div class="inner">
+                    <h3>44</h3>
 
-        <div class="info-box-content">
-          <span class="info-box-number">TRANSPORT NW</span>
-          <span class="info-box-number">Time</span>
+                    <p>User Registrations</p>
+                </div>
+                <div class="icon">
+                    <i class="ion ion-person-add"></i>
+                </div>
+                <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
         </div>
-        <!-- /.info-box-content -->
-      </div>
-      <!-- /.info-box -->
-    </div>
-    <!-- /.col -->
+        <!-- ./col -->
+        <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-danger">
+                <div class="inner">
+                    <h3>65</h3>
 
-    <!-- fix for small devices only -->
-    <div class="clearfix hidden-md-up"></div>
-
-    <div class="col-12 col-sm-6 col-md-3">
-      <div class="info-box mb-3">
-        <span class="info-box-icon bg-success elevation-1"><i class="fas fa-shopping-cart"></i></span>
-
-        <div class="info-box-content">
-          <span class="info-box-number">DC & CLOUD</span>
-          <span class="info-box-number">Time</span>
+                    <p>Unique Visitors</p>
+                </div>
+                <div class="icon">
+                    <i class="ion ion-pie-graph"></i>
+                </div>
+                <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
         </div>
-        <!-- /.info-box-content -->
-      </div>
-      <!-- /.info-box -->
+        <!-- ./col -->
     </div>
-    <!-- /.col -->
-    <div class="col-12 col-sm-6 col-md-3">
-      <div class="info-box mb-3">
-        <span class="info-box-icon bg-warning elevation-1"><i class="fas fa-users"></i></span>
-
-        <div class="info-box-content">
-          <span class="info-box-number">PBX</span>
-          <span class="info-box-number">Time</span>
-        </div>
-        <!-- /.info-box-content -->
-      </div>
-      <!-- /.info-box -->
-    </div>
-    <!-- /.col -->
-  </div>
-  <!-- /.row -->
-
-
-  <div class="row">
-    <div class="col-12 col-sm-6 col-md-3">
-      <div class="info-box">
-        <span class="info-box-icon bg-info elevation-1"><i class="fas fa-cog"></i></span>
-
-        <div class="info-box-content">
-          <span class="info-box-number">METRO</span>
-          <span class="info-box-number">Time</span>
-        </div>
-        <!-- /.info-box-content -->
-      </div>
-      <!-- /.info-box -->
-    </div>
-    <!-- /.col -->
-    <div class="col-12 col-sm-6 col-md-3">
-      <div class="info-box mb-3">
-        <span class="info-box-icon bg-danger elevation-1"><i class="fas fa-thumbs-up"></i></span>
-
-        <div class="info-box-content">
-          <span class="info-box-number">R1</span>
-          <span class="info-box-number">Time</span>
-        </div>
-        <!-- /.info-box-content -->
-      </div>
-      <!-- /.info-box -->
-    </div>
-    <!-- /.col -->
-
-    <!-- fix for small devices only -->
-    <div class="clearfix hidden-md-up"></div>
-
-    <div class="col-12 col-sm-6 col-md-3">
-      <div class="info-box mb-3">
-        <span class="info-box-icon bg-success elevation-1"><i class="fas fa-shopping-cart"></i></span>
-
-        <div class="info-box-content">
-          <span class="info-box-number">R2</span>
-          <span class="info-box-number">Time</span>
-        </div>
-        <!-- /.info-box-content -->
-      </div>
-      <!-- /.info-box -->
-    </div>
-    <!-- /.col -->
-    <div class="col-12 col-sm-6 col-md-3">
-      <div class="info-box mb-3">
-        <span class="info-box-icon bg-warning elevation-1"><i class="fas fa-users"></i></span>
-
-        <div class="info-box-content">
-          <span class="info-box-number">R3</span>
-          <span class="info-box-number">Time</span>
-        </div>
-        <!-- /.info-box-content -->
-      </div>
-      <!-- /.info-box -->
-    </div>
-    <!-- /.col -->
-  </div>
-  <!-- /.row -->
 @endsection

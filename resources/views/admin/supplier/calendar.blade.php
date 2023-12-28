@@ -78,6 +78,13 @@
                 selectHelper: true,
                 select:function(start, end, allDay)
                 {
+
+                    // Check if the current view is month, and prevent selection
+    if (calendar.fullCalendar('getView').name === 'month') {
+      calendar.fullCalendar('unselect');
+      return;
+    }
+    
                     var title = prompt('Event Title:');
         
                     if(title)

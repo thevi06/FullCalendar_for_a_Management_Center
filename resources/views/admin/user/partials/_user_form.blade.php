@@ -13,7 +13,7 @@
             <div class="form-group">
                 <div class="mb-3">
                     <label class="form-label" for="email">Username / Email</label>
-                    <input type="email" class="form-control" id="email" name="email"
+                    <input  class="form-control" id="email" name="email"
                            @if(isset($user)) value="{{$user->email}}" @endif required>
                 </div>
             </div>
@@ -39,23 +39,23 @@
             </div>
         </div>
 
-        <div class="col-lg-3">
+        {{-- <div class="col-lg-3">
             <div class="form-group">
                 <div class="mb-3">
                     <label class="form-label" for="password">Password</label>
                     <input type="password" class="form-control" id="password" name="password" required>
                 </div>
             </div>
-        </div>
+        </div> --}}
 
-        <div class="col-lg-3">
+        {{-- <div class="col-lg-3">
             <div class="form-group">
                 <div class="mb-3">
                     <label class="form-label" for="password_confirmation">Confirm Password</label>
                     <input type="password" class="form-control" id="password_confirmation" name="password_confirmation" required>
                 </div>
             </div>
-        </div>
+        </div> --}}
     </div>
 </div>
 

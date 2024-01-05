@@ -1,4 +1,4 @@
-<script>
+{{-- <script>
     $(function () {
         var Toast = Swal.mixin({
             toast: true,
@@ -51,4 +51,4 @@
 
         @endif
     });
-</script>
+</script> --}}

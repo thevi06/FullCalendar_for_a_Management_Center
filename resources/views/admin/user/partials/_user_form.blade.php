@@ -12,7 +12,7 @@
         <div class="col-lg-6">
             <div class="form-group">
                 <div class="mb-3">
-                    <label class="form-label" for="email">Username / Email</label>
+                    <label class="form-label" for="email">User ID</label>
                     <input  class="form-control" id="email" name="email"
                            @if(isset($user)) value="{{$user->email}}" @endif required>
                 </div>

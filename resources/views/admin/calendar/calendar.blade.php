@@ -200,7 +200,3 @@
 @section('datatable_script')
     @include('partials.datatable_script')
 @endsection
-
-
-
-

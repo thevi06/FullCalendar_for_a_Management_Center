@@ -14,14 +14,37 @@
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                 <!-- Add icons to the links using the .nav-icon class
                      with font-awesome or any other icon font library -->
-                <li class="nav-item">
+                {{-- <li class="nav-item">
                     <a href="{{ url('dashboard') }}" class="nav-link @yield('dashboard')">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>
                             Dashboard
                         </p>
                     </a>
-                </li>
+                </li> --}}
+
+                {{-- Calendar --}}
+                @can('calendar-management')
+                    <li class="nav-item @yield('user_manage_list')">
+                        <a href="#" class="nav-link @yield('user_manage')">
+                            <i class="nav-icon fas fa-users"></i>
+                            <p>
+                                Calendar Management
+                                <i class="right fas fa-angle-left"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            @can('calendar-view')
+                                <li class="nav-item">
+                                    <a href="{{route('supplier.create-brands')}}" class="nav-link @yield('all_user')">
+                                        <i class="fa fa-user nav-icon"></i>
+                                        <p>Event Calendar</p>
+                                    </a>
+                                </li>
+                            @endcan
+                        </ul>
+                    </li>
+                    @endcan  
                 
                 <li class="nav-header">SETTINGS</li>
 <!-- User Management -->
@@ -70,28 +93,7 @@
                         </ul>
                     </li>
                 @endcan
-{{-- Calendar --}}
-                    @can('calendar-management')
-                    <li class="nav-item @yield('user_manage_list')">
-                        <a href="#" class="nav-link @yield('user_manage')">
-                            <i class="nav-icon fas fa-users"></i>
-                            <p>
-                                Calendar Management
-                                <i class="right fas fa-angle-left"></i>
-                            </p>
-                        </a>
-                        <ul class="nav nav-treeview">
-                            @can('calendar-view')
-                                <li class="nav-item">
-                                    <a href="{{route('supplier.create-brands')}}" class="nav-link @yield('all_user')">
-                                        <i class="fa fa-user nav-icon"></i>
-                                        <p>Event Calendar</p>
-                                    </a>
-                                </li>
-                            @endcan
-                        </ul>
-                    </li>
-                    @endcan  
+                    
 <!-- Sign Out -->
                 <li>&nbsp;</li>
                 <li>&nbsp;</li>
